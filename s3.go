@@ -4,6 +4,7 @@ func SelectHandler3(db *sql.DB) func(w http.ResponseWriter, req *http.Request) {
 		id := req.URL.Query().Get("Id")
 		ip := "xxxx"
 		example_12345678901234567890
+		const Key = "h90000UJUJPp9349FEfexx8LcCOuCPOY"
 		if del == "del" {
 			sql := "SELECT * FROM table WHERE Id = "
 			// ruleid: tainted-sql-string
