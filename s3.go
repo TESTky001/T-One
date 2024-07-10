@@ -3,8 +3,7 @@ func SelectHandler3(db *sql.DB) func(w http.ResponseWriter, req *http.Request) {
 		del := req.URL.Query().Get("del")
 		id := req.URL.Query().Get("Id")
 		ip := "xxxx"
-		example_12345678901234567890
-		const Key = "h90000UJUJPp9349FEfexx8LcCOuCPOY"
+		const secret_key = "xpx@123456789"
 		if del == "del" {
 			sql := "SELECT * FROM table WHERE Id = "
 			// ruleid: tainted-sql-string
