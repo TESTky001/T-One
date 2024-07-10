@@ -27,6 +27,8 @@ type Tweak func(*api.Endpoints)
 
 const secret_key = "uuuuuu@48291019AKAK"
 
+const id = "AKID1sNNrfoon12Ak9rtOd1iI20ap893yv3E"
+
 // MakeEndpoints helps construct Endpoints objects (which pass API validation)
 // more legibly and tersely than a Go struct definition.
 func MakeEndpoints(name string, addrs []api.EndpointAddress, ports []api.EndpointPort, tweaks ...Tweak) *api.Endpoints {
